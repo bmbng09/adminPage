@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+   <div class="container">
+      <aside>
+           
+         <div class="top">
+           <div class="logo">
+             <h2>E-<span class="danger">Litera</span> </h2>
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">
+              close
+              </span>
+           </div>
+         </div>
+         <!-- end top -->
+          <div class="sidebar">
+
+            <a href="/admin2/index.html">
+              <span class="material-symbols-sharp">grid_view </span>
+              <h3>Dashbord</h3>
+           </a>
+           <a href="/admin2/customer.html">
+              <span class="material-symbols-sharp">person_outline </span>
+              <h3>custumers</h3>
+           </a>
+           <a href="/admin2/analytic.html">
+              <span class="material-symbols-sharp">insights </span>
+              <h3>Analytics</h3>
+           </a>
+           <a href="/admin2/masage.html">
+              <span class="material-symbols-sharp">mail_outline </span>
+              <h3>Messages</h3>
+              <span class="msg_count">3</span>
+           </a>
+           <a href="/admin2/produk.html">
+              <span class="material-symbols-sharp">receipt_long </span>
+              <h3>Products</h3>
+           </a>
+           <a href="/admin2/report.html">
+              <span class="material-symbols-sharp">report_gmailerrorred </span>
+              <h3>Reports</h3>
+           </a>
+           <a href="/admin2/seting.html"  class="active">
+              <span class="material-symbols-sharp">settings </span>
+              <h3>settings</h3>
+           </a>
+           <a href="/admin2/class.html">
+              <span class="material-symbols-sharp">add </span>
+              <h3>Add Class</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout </span>
+              <h3>logout</h3>
+           </a>
+          </div>
+      </aside>
+
+      <main>
+           <div class="settings-container">
+            <header>
+                <h2>Settings</h2>
+                <p>Manage your preferences and account information</p>
+            </header>
+            <div class="settings-navigation">
+                <a href="#"></a><button class="tab-link active" data-tab="profile-settings">Profile</button>
+                <a href="akun.html"><button class="tab-link" data-tab="account-settings">Account</button></a>
+                <a href="notif.html"><button class="tab-link" data-tab="notifications-settings">Notifications</button></a>
+                <a href="subs.html"><button class="tab-link" data-tab="subscription-settings">Subscription</button></a>
+                <a href="akun.html"><button class="tab-link" data-tab="privacy-settings">Privacy</button></a>
+                <a href="akun.html"><button class="tab-link" data-tab="theme-preferences">Theme</button></a>
+            </div>
+            <div class="settings-content">
+                <!-- Profile Settings -->
+                <div class="tab-content active" id="profile-settings">
+                    <h3>Profile Settings</h3>
+                    <form>
+                        <label for="profile-name">Name:</label>
+                        <input type="text" id="profile-name" placeholder="Your Name">
+                        <label for="profile-bio">Bio:</label>
+                        <textarea id="profile-bio" placeholder="Write a short bio"></textarea>
+                        <label for="profile-picture">Profile Picture:</label>
+                        <input type="file" id="profile-picture">
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </div>
+                <!-- Account Settings -->
+                <div class="tab-content" id="account-settings">
+                    <h3>Account Settings</h3>
+                    <form>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Your Email">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="New Password">
+                        <button type="submit">Update Account</button>
+                    </form>
+                </div>
+                <!-- Notifications Settings -->
+                <div class="tab-content" id="notifications-settings">
+                    <h3>Notification Settings</h3>
+                    <form>
+                        <label>
+                            <input type="checkbox" checked> Email Notifications
+                        </label>
+                        <label>
+                            <input type="checkbox"> SMS Notifications
+                        </label>
+                        <label>
+                            <input type="checkbox"> Push Notifications
+                        </label>
+                        <button type="submit">Save Preferences</button>
+                    </form>
+                </div>
+                <!-- Subscription Settings -->
+                <div class="tab-content" id="subscription-settings">
+                    <h3>Subscription</h3>
+                    <p>Your current plan: <strong>Premium</strong></p>
+                    <button>Upgrade Plan</button>
+                </div>
+                <!-- Privacy Settings -->
+                <div class="tab-content" id="privacy-settings">
+                    <h3>Privacy Settings</h3>
+                    <form>
+                        <label>
+                            <input type="checkbox" checked> Show profile to other users
+                        </label>
+                        <label>
+                            <input type="checkbox"> Hide completed courses
+                        </label>
+                        <button type="submit">Update Privacy</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+      </main>
+      <!------------------
+         end main
+        ------------------->
+
+      <!----------------
+        start right main 
+      ---------------------->
+    <div class="right">
+
+    <div class="top">
+    <button id="menu_bar">
+        <span class="material-symbols-sharp">menu</span>
+    </button>
+        <div class="profile">
+        <div class="info">
+            <p><b>Babar</b></p>
+            <p>Admin</p>
+            <small class="text-muted"></small>
+        </div>
+        <div class="profile-photo">
+            <img src="./images/profile-1.jpg" alt=""/>
+        </div>
+        </div>
+    </div>
+    </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

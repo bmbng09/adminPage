@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="subs.css">
+</head>
+<body>
+   <div class="container">
+      <aside>
+           
+         <div class="top">
+           <div class="logo">
+             <h2>E-<span class="danger">Litera</span> </h2>
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">
+              close
+              </span>
+           </div>
+         </div>
+         <!-- end top -->
+          <div class="sidebar">
+
+            <a href="index.html">
+              <span class="material-symbols-sharp">grid_view </span>
+              <h3>Dashbord</h3>
+           </a>
+           <a href="customer.html">
+              <span class="material-symbols-sharp">person_outline </span>
+              <h3>custumers</h3>
+           </a>
+           <a href="analytic.html">
+              <span class="material-symbols-sharp">insights </span>
+              <h3>Analytics</h3>
+           </a>
+           <a href="masage.html">
+              <span class="material-symbols-sharp">mail_outline </span>
+              <h3>Messages</h3>
+              <span class="msg_count">3</span>
+           </a>
+           <a href="produk.html">
+              <span class="material-symbols-sharp">receipt_long </span>
+              <h3>Products</h3>
+           </a>
+           <a href="produk.html">
+              <span class="material-symbols-sharp">report_gmailerrorred </span>
+              <h3>Reports</h3>
+           </a>
+           <a href="#"  class="active">
+              <span class="material-symbols-sharp">settings </span>
+              <h3>settings</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">add </span>
+              <h3>Add Class</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout </span>
+              <h3>logout</h3>
+           </a>
+          </div>
+      </aside>
+
+      <main>
+        <div class="account-settings-container">
+            <header>
+                <h2>Account Settings</h2>
+                <p>Update your account details and manage security settings.</p>
+            </header>
+            <div class="settings-navigation">
+                <a href="profile.html"><button class="tab-link" data-tab="profile-settings">Profile</button></a>
+                <a href="akun.html"><button class="tab-link" data-tab="account-settings">Account</button></a>
+                <a href="notif.html"><button class="tab-link" data-tab="notifications-settings">Notifications</button></a>
+                <a href="#"></a><button class="tab-link active" data-tab="subscription-settings">Subscription</button></a>
+                <a href="profile.html"><button class="tab-link" data-tab="privacy-settings">Privacy</button></a>
+                <a href="profile.html"><button class="tab-link" data-tab="theme-preferences">Theme</button></a>
+            </div>
+
+            <div class="settings-container">
+                <header>
+                    <h2>Subscription Settings</h2>
+                    <p>Manage your subscription plan and billing details.</p>
+                </header>
+                <div class="subscription-details">
+                    <h3>Your Current Plan</h3>
+                    <p>Plan: <strong>Premium</strong></p>
+                    <p>Price: <strong>$19.99/month</strong></p>
+                    <p>Renewal Date: <strong>15 January 2025</strong></p>
+                    <button class="btn-cancel">Cancel Subscription</button>
+                </div>
+                <div class="subscription-upgrade">
+                    <h3>Upgrade Your Plan</h3>
+                    <form>
+                        <label>
+                            <input type="radio" name="plan" value="basic" checked>
+                            <strong>Basic</strong> - $9.99/month
+                        </label>
+                        <label>
+                            <input type="radio" name="plan" value="premium">
+                            <strong>Premium</strong> - $19.99/month
+                        </label>
+                        <label>
+                            <input type="radio" name="plan" value="pro">
+                            <strong>Pro</strong> - $29.99/month
+                        </label>
+                        <button type="submit" class="btn-upgrade">Upgrade Plan</button>
+                    </form>
+                </div>
+            </div>
+            
+      </main>
+
+    <div class="right">
+
+    <div class="top">
+    <button id="menu_bar">
+        <span class="material-symbols-sharp">menu</span>
+    </button>
+        <div class="profile">
+        <div class="info">
+            <p><b>Babar</b></p>
+            <p>Admin</p>
+            <small class="text-muted"></small>
+        </div>
+        <div class="profile-photo">
+            <img src="./images/profile-1.jpg" alt=""/>
+        </div>
+        </div>
+    </div>
+    </div>
+   </div>
+   <script src="subs.js"></script>
+</body>
+</html>
