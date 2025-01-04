@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI/UX</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="customer.css">
+  <link rel="stylesheet" href="analytic.css">
 </head>
 <body>
    <div class="container">
@@ -29,11 +29,11 @@
               <span class="material-symbols-sharp">grid_view </span>
               <h3>Dashbord</h3>
            </a>
-           <a href="#" class="active">
+           <a href="customer.html">
               <span class="material-symbols-sharp">person_outline </span>
               <h3>custumers</h3>
            </a>
-           <a href="analytic.html">
+           <a href="#" class="active">
               <span class="material-symbols-sharp">insights </span>
               <h3>Analytics</h3>
            </a>
@@ -66,61 +66,38 @@
       </aside>
 
       <main>
-        <h1>Custumers</h1>
+        <h1>Analytics</h1>
 
-      <div class="recent_order">
-         <h2>Customer List</h2>
-         <table> 
-             <thead>
-              <tr>
-                <th>Class Name</th>
-                <th>ID Class</th>
-                <!-- <th>Payments</th> -->
-                <th>Status</th>
-              </tr>
-             </thead>
-              <tbody>
-                 <tr>
-                   <td>bubun</td>
-                   <td>4563</td>
-                   <td>Due</td>
-                   <!-- <td class="warning">Pending</td> -->
-                   <td class="primary">Details</td>
-                 </tr>
-                 <tr>
-                  <td>santos</td>
-                  <td>4563</td>
-                  <td>Due</td>
-                  <!-- <td class="warning">Pending</td> -->
-                  <td class="primary">Details</td>
-                </tr>
-                <tr>
-                  <td>zaru</td>
-                  <td>4563</td>
-                  <td>Due</td>
-                  <!-- <td class="warning">Pending</td> -->
-                  <td class="primary">Details</td>
-                </tr>
-                <tr>
-                  <td>upip</td>
-                  <td>4563</td>
-                  <td>Due</td>
-                  <!-- <td class="warning">Pending</td> -->
-                  <td class="primary">Details</td>
-                </tr>
-              </tbody>
-         </table>
-         <a href="#">Show All</a>
-      </div>
+                <!-- Card Section -->
+        <div class="analytics_cards">
+            <div class="card">
+            <h3>Total Revenue</h3>
+            <p>$25,320</p>
+            </div>
+            <div class="card">
+            <h3>Total Customers</h3>
+            <p>1,240</p>
+            </div>
+            <div class="card">
+            <h3>Active Subscriptions</h3>
+            <p>865</p>
+            </div>
+            <div class="card">
+            <h3>Daily Visitors</h3>
+            <p>4,320</p>
+            </div>
+        </div>
 
+        <!-- Chart Section -->
+        <div class="analytics_chart">
+            <h2>Revenue Growth</h2>
+            <div class="chart_box">
+              <canvas id="revenueChart"></canvas>
+            </div>
+        </div>  
       </main>
-      <!------------------
-         end main
-        ------------------->
 
-      <!----------------
-        start right main 
-      ---------------------->
+      <!-- sebelah kanan -->
     <div class="right">
 
 <div class="top">
@@ -228,6 +205,7 @@
      </div>
     </div>
    </div>
-   <script src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="analytic.js"></script>
 </body>
 </html>
